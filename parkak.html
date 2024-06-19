@@ -1,11 +1,9 @@
 <!DOCTYPE html PUBLIC>
-<HTML lang="hu-HU">
-<HEAD>
-<META http-equiv="Content-Type" name="viewport" content="text/html; charset=UTF-8; width=device-width; initial-scale=1">
-<STYLE type="text/css">
-* { box-sizing: border-box; }
-
-BODY {
+<html lang="hu-HU">
+<head>
+<meta http-equiv="Content-Type" name="viewport" content="text/html; charset=UTF-8; width=device-width; initial-scale=1">
+<style type="text/css">
+body {
   text-indent: 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14pt;
@@ -16,61 +14,52 @@ BODY {
   color: purple;  /* Something ugly so that we notice it for first reading. */
   text-align: left;
 }
+body.l { font-size: 22pt; }
 
-BODY > H1, BODY > H2, BODY > H3, BODY > H4, BODY > P, BODY > DIV.CONV { color: #fff; }
+a, a:visited, a:active { color: #88f; }
 
-P {
+body > h1, body > h2, body > h3, body > h4, body > p, body > div.conv, body > div.its { color: #fff; }
+
+span.IUC { font-style: italic; background-color: #3a3a3a; color: #fff; }
+span.IVC { font-style: italic; background-color: #fff; color: #000; }
+
+p, div.it {
   margin-bottom: 1em;
   margin-top: 0px;
 }
 
-SP {
-  display: inline;
+span.sp {
   font-style: normal;
   font-weight: normal;
   padding-left: 1pt;
   padding-right: 1pt;
 }
 
-SPAN.IUC, IU {
-  font-style: italic;
-  background-color: #3a3a3a;
-  color: #fff;
-}
-
-SPAN.IVC, IV {
-  font-style: italic;
-  background-color: #fff;
-  color: #000;
-}
-
-DIV.CONV {
+div.conv {
   display: grid;
   grid-gap: 1em;
   width: 100%;
   grid-template-columns: max-content 1fr;
 }
-DIV.CONV > DIV.C1 { grid-column: 1; }
-DIV.CONV > DIV.C2 { grid-column: 2; }
-</STYLE>
-<STYLE type="text/css">
-SP.B { background-color:magenta; } .TB { color:#ff2093; }
-SP.S { background-color:yellow; color:#000; } .TS { color:#dcd427; }
-SP.K { background-color:green; } .TK { color:#32ff32; }
+div.conv > div.C1 { grid-column: 1; }
+div.conv > div.C2 { grid-column: 2; }
 
-</STYLE>
-<TITLE>Székely-Balogh Szilvi: Párkák</TITLE>
-</HEAD>
-<BODY link="#88f" vlink="#88f" alink="#88f">
+span.B { background-color:magenta; }            span.TB { color:#ff2093; }
+span.S { background-color:yellow; color:#000; } span.TS { color:#dcd427; }
+span.K { background-color:green; }              span.TK { color:#32ff32; }
+</style>
+<title>Székely-Balogh Szilvi: Párkák</title>
+</head>
+<body>
 
-<H1>Székely-Balogh Szilvi: Párkák</H1>
+<h1>Székely-Balogh Szilvi: Párkák</h1>
 
-<P>@B (nagymama, 51 éves) Répási Nitta
-<BR>@S (anya, 35 éves) Szalay Krisztina
-<BR>@K (lány, 15 éves) Pál Enikő
-<BR>Rendező: Szabó Péter (pts)</P>
+<p>@B (nagymama, 51 éves) Répási Nitta
+<br>@S (anya, 35 éves) Szalay Krisztina
+<br>@K (lány, 15 éves) Pál Enikő
+<br>Rendező: Szabó Péter (pts)</p>
 
-<DIV CLASS=CONV>
+<div class=conv>
 <S-0>Egyszerű, de tiszta, rendezett konyha. @K az asztalnál ül. @B körülötte sürög. Letesz egy tányér rántott húst a lány elé.</S-0>
 <S-K>Már akkora a lyuk a gyomromon, hogy át lehet látni rajta.</S-K>
 <S-B>Nem is értem, hogy anyád miért erőlteti annyira ezt az iskolai étkezést. Vékony vagy, mint a nádszál.</S-B>
@@ -320,15 +309,16 @@ SP.K { background-color:green; } .TK { color:#32ff32; }
 <S-B>Mondtam én. Kenek még egyet.</S-B>
 <S-0><IV>Sötét.</IV></S-0>
 <S-0><IV>Fény.</IV> Világos, meghajlás.</S-0>
-</DIV>
+</div>
 
-</BODY>
-<SCRIPT>
+</body>
+<script>
   var roles = {'B': 'BORÓKA', 'S': 'SÁRA', 'K': 'KAMILLA'};
   document.body.innerHTML = (document.body.innerHTML
       .replaceAll(/<X>(.*?)<\/X>/gsi, '<audio controls><source src="$1.mp3" type="audio/mpeg"></audio>')
-        .replaceAll(/<S-([A-Z0-9])>(.*?)<\/S-\1>/gsi, function(m, p1, p2) { if (p1 == '0') return '<DIV CLASS=C2><SPAN CLASS=IUC>* ' + p2 + '</SPAN></DIV>'; p1 = p1.toUpperCase(); return '<DIV CLASS=C1>@' + p1 + '</DIV><DIV CLASS=C2><SPAN CLASS=T'+ p1 +'>' + p2 + '</SPAN></DIV>'; })
-      .replaceAll(/@([A-Z0-9])/g, function(m, p1) { return '<SP CLASS=' + p1 + '>' + roles[p1] + '</SP>'; })
+      .replaceAll(/<S-([A-Z0-9])>(.*?)<\/S-\1>/gsi, function(m, p1, p2) { if (p1 == '0') return '<div class=C2><span class=IUC>* ' + p2 + '</span></div>'; p1 = p1.toUpperCase(); return '<div class=C1>@' + p1 + '</div><div class=C2><span class=T'+ p1 +'>' + p2 + '</span></div>'; })
+      .replaceAll(/<(I[UV])>(.*?)<\/\1>/gsi, function(m, p1, p2) { return '<span class=' + p1 + 'C>' + p2 + '</span>'; })
+      .replaceAll(/@([A-Z0-9])/g, function(m, p1) { return '<span class="sp ' + p1 + '">' + roles[p1] + '</span>'; })
       );
-</SCRIPT>
-</HTML>
+</script>
+</html>
