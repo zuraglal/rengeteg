@@ -1,11 +1,11 @@
 <!DOCTYPE html PUBLIC>
-<HTML lang="hu-HU">
-<HEAD>
-<META http-equiv="Content-Type" name="viewport" content="text/html; charset=UTF-8; width=device-width; initial-scale=1">
-<STYLE type="text/css">
-* { box-sizing: border-box; }
-
-BODY {
+<html lang="hu-HU">
+<!-- Start of document-independent HTML header. -->
+<!-- HTML editing style: https://docs.google.com/document/d/1m0Z1alv-2W1qbn7qLRhGUpE77oGxE8JjjwnP00FcpaQ/edit -->
+<head>
+<meta http-equiv="Content-Type" name="viewport" content="text/html; charset=UTF-8; width=device-width; initial-scale=1">
+<style type="text/css">
+body {
   text-indent: 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14pt;
@@ -16,76 +16,64 @@ BODY {
   color: purple;  /* Something ugly so that we notice it for first reading. */
   text-align: left;
 }
+body.l { font-size: 22pt; }
 
-BODY > H1, BODY > H2, BODY > H3, BODY > H4, BODY > P, BODY > DIV.CONV { color: #fff; }
+a, a:visited, a:active { color: #88f; }
 
-P {
+body > h1, body > h2, body > h3, body > h4, body > p, body > div.conv, body > div.its { color: #fff; }
+
+span.IUC { font-style: italic; background-color: #3a3a3a; color: #fff; }
+span.IVC { font-style: italic; background-color: #fff; color: #000; }
+
+p, div.it {
   margin-bottom: 1em;
   margin-top: 0px;
 }
 
-SP {
-  display: inline;
+span.sp {
   font-style: normal;
   font-weight: normal;
   padding-left: 1pt;
   padding-right: 1pt;
 }
 
-SPAN.IUC, IU {
-  font-style: italic;
-  background-color: #3a3a3a;
-  color: #fff;
-}
-
-SPAN.IVC, IV {
-  font-style: italic;
-  background-color: #fff;
-  color: #000;
-}
-
-DIV.CONV {
+div.conv {
   display: grid;
   grid-gap: 1em;
   width: 100%;
   grid-template-columns: max-content 1fr;
 }
-DIV.CONV > DIV.C1 { grid-column: 1; }
-DIV.CONV > DIV.C2 { grid-column: 2; }
-</STYLE>
-<STYLE type="text/css">
-SP.R { background-color:red; } .TR { color:#ff3333; }
-SP.M { background-color:yellow; color:#000; } .TM { color:#dcd427; }
-SP.J { background-color:green; } .TJ { color:#779933; }
-SP.N { background-color:green; } .TN { color:#779933; }
-SP.I { background-color:blue; } .TI { color:#0092cc; }
-SP.H { background-color:blue; } .TH { color:#0092cc; }
-SP.Z { background-color:purple; } .TZ { color:purple; }
+div.conv > div.C1 { grid-column: 1; }
+div.conv > div.C2 { grid-column: 2; }
+</style>
+<!-- End of document-independent HTML header. -->
 
-</STYLE>
-<TITLE>Stermeczky Eszter: A Tanösvény</TITLE>
-</HEAD>
-<BODY link="#88f" vlink="#88f" alink="#88f">
+<style type="text/css">
+span.R { background-color:red; }                span.TR { color:#ff3333; }  /*@ RENDEZŐ */
+span.M { background-color:yellow; color:#000; } span.TM { color:#dcd427; }  /*@ MÁRTA */
+span.J { background-color:green; }              span.TJ { color:#779933; }  /*@ JÓZSI */
+span.N { background-color:green; }              span.TN { color:#779933; }  /*@ NYOMOZÓ */
+span.I { background-color:blue; }               span.TI { color:#0092cc; }  /*@ IDEGEN */
+span.H { background-color:blue; }               span.TH { color:#0092cc; }  /*@ H */
+span.Z { background-color:orange; color:#000; } span.TZ { color:orange; }   /*@ NÉZŐ */
+</style>
+<title>Stermeczky Eszter: A Tanösvény</title>
+</head>
+<body>
 
-<H1>Stermeczky Eszter: A Tanösvény
-<BR>jelige: ösvények</H1>
+<h1>Stermeczky Eszter: A Tanösvény
+<br>jelige: ösvények</h1>
 
-<P>@R (tartózkodik a szerepléstől, csak irányít) Lackner Kristóf (Stofee)
-<BR>@M (feleség, avagy a városiak) Répási Nitta
-<BR>@J (testvér, avagy @N úr) Somogyvári Kristóf
-<BR>@I (avagy @H, az elveszett ember) Hajdu Katalin
-<BR>Rendező: Gombkötő Júlia</P>
+<p>@R (tartózkodik a szerepléstől, csak irányít) Lackner Kristóf (Stofee)
+<br>@M (feleség, avagy a városiak) Répási Nitta
+<br>@J (testvér, avagy @N úr) Somogyvári Kristóf
+<br>@I (avagy @H, az elveszett ember) Hajdu Katalin
+<br>Rendező: Gombkötő Júlia</p>
 
-<DIV CLASS=CONV>
+<div class=conv>
 <S-0>Helyszín: egy szűkös próbaterem, avagy az egész város.</S-0>
 <S-0>Félhomály. Az @I a közönség soraiban ül. @M és @J a színen. @R érkezik.</S-0>
-<S-0>Tér: Nincs frontális színpadkép, ezáltal kinevezett nézőtér sincs. A nézők székei szétszórva, össze-vissza állnak. Minden egyes széken 1-1 kinyomtatott A 4-es papíron néhány szabály pontba szedve, kinyomtatva:<BR>
-1.	Az előadás alatt csak és kizárólag a @R döntheti el ki szólal meg.<BR>
-2.	A felszólított személynek kötelező megszólalnia.<BR>
-3.	Bármikor pozíciót válthat a székkel, ha esetleg nem látja az előadókat:<BR>
-&emsp;a)	A szék helyzetén mozdít a jobb perspektíva érdekében<BR>
-&emsp;b)	Bármikor átsétálhat egyik helyről a másikba a téren belül, eldöntve, hogy az eredeti székét üresen hagyja, vagy magával viszi. Közlekedés csendben és lassan lehetséges!<BR>
-4.	Senkinek nincs vétójoga a @R-n kívül.</S-0>
+<S-0>Tér: Nincs frontális színpadkép, ezáltal kinevezett nézőtér sincs. A nézők székei szétszórva, össze-vissza állnak. Minden egyes széken 1-1 kinyomtatott A 4-es papíron néhány szabály pontba szedve, kinyomtatva:<br>1. Az előadás alatt csak és kizárólag a @R döntheti el ki szólal meg.<br>2. A felszólított személynek kötelező megszólalnia.<br>3. Bármikor pozíciót válthat a székkel, ha esetleg nem látja az előadókat:<br>&emsp;a) A szék helyzetén mozdít a jobb perspektíva érdekében<br>&emsp;b) Bármikor átsétálhat egyik helyről a másikba a téren belül, eldöntve, hogy az eredeti székét üresen hagyja, vagy magával viszi. Közlekedés csendben és lassan lehetséges!<br>4. Senkinek nincs vétójoga a @R-n kívül.</S-0>
 <S-0>A tér közepén hátul az egy székről @J fetrengve folyik le. Másik, színpad jobb oldalán @M ugyanebben az állapotban. Egy szék üresen áll.</S-0>
 <S-R>Kezdhetünk? <IU>(ledobja a szövegkönyveket @M és @J elé)</IU></S-R>
 <S-M>Szereztél főszereplőt?</S-M>
@@ -282,15 +270,22 @@ SP.Z { background-color:purple; } .TZ { color:purple; }
 <S-0>@J kivezeti a @R-t. A színen maradt szereplők összeszedik a @H-ról szóló szórólapokat, és újakkal plakátolják ki a teret, amelyeken a @R arcképe szerepel.</S-0>
 <S-0><IV>Sötét.</IV></S-0>
 <S-0><IV>Fény.</IV> Világos, meghajlás.</S-0>
-</DIV>
+</div>
 
-</BODY>
-<SCRIPT>
-  var roles = {'R': 'RENDEZŐ', 'M': 'MÁRTA', 'J': 'JÓZSI', 'I': 'IDEGEN', 'N': 'NYOMOZÓ', 'H': 'H', Z: 'NEZŐ'};
+</body>
+<script>
+  var roles = {};  // Keys must be single-capital-letter. Example: {'H': 'HÓFEHÉRKE', 'G': 'GONOSZ MOSTOHA', 'K': 'KIRÁLYFI'};
+  var ei, es = document.head.getElementsByTagName('STYLE');
+  for (ei = 0; ei < es.length; ++ei) {
+    var re = /\nspan[.]([A-Z])[ \t]*\{[^\n]*\/[*]@[ \t]*([^<>\\'"*\/\t\r\n;{}]+?)[ \t]*[*]\//g;  // Must be a separate variable for multiple matches.
+    var s = es[ei].innerText, match;
+    while ((match = re.exec(s)) !== null) { roles[match[1]] = match[2]; }
+  }
   document.body.innerHTML = (document.body.innerHTML
       .replaceAll(/<X>(.*?)<\/X>/gsi, '<audio controls><source src="$1.mp3" type="audio/mpeg"></audio>')
-        .replaceAll(/<S-([A-Z0-9])>(.*?)<\/S-\1>/gsi, function(m, p1, p2) { if (p1 == '0') return '<DIV CLASS=C2><SPAN CLASS=IUC>* ' + p2 + '</SPAN></DIV>'; p1 = p1.toUpperCase(); return '<DIV CLASS=C1>@' + p1 + '</DIV><DIV CLASS=C2><SPAN CLASS=T'+ p1 +'>' + p2 + '</SPAN></DIV>'; })
-      .replaceAll(/@([A-Z0-9])/g, function(m, p1) { return '<SP CLASS=' + p1 + '>' + roles[p1] + '</SP>'; })
+      .replaceAll(/<S-([A-Z0-9])>(.*?)<\/S-\1>/gsi, function(m, p1, p2) { if (p1 == '0') return '<div class=C2><span class=IUC>* ' + p2 + '</span></div>'; p1 = p1.toUpperCase(); return '<div class=C1>@' + p1 + '</div><div class=C2><span class=T'+ p1 +'>' + p2 + '</span></div>'; })
+      .replaceAll(/<(I[UV])>(.*?)<\/\1>/gsi, function(m, p1, p2) { return '<span class=' + p1 + 'C>' + p2 + '</span>'; })
+      .replaceAll(/@([A-Z0-9])/g, function(m, p1) { return '<span class="sp ' + p1 + '">' + roles[p1] + '</span>'; })
       );
-</SCRIPT>
-</HTML>
+</script>
+</html>
